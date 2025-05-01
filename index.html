@@ -4,56 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AllFibreRegisterHere</title>
+  <meta name="description" content="Daftar internet fibre rumah dari pelbagai jenama seperti Unifi, Maxis dan TIME. Pemasangan pantas, sokongan penuh dan harga terbaik di Malaysia." />
+  <meta name="keywords" content="AllFibre, Unifi, Maxis, TIME Fibre, internet rumah, daftar internet, internet laju, internet murah Malaysia" />
+  <meta name="author" content="AllFibreRegisterHere" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f8fb;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #004080;
+      background: linear-gradient(90deg, #004080, #0073e6);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
     nav {
-      background-color: #e6e6e6;
-      padding: 10px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
       text-align: center;
     }
     nav a {
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       color: #004080;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
     }
     .container {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     .hero {
-      background-color: #cce5ff;
-      padding: 30px;
+      background-color: #eaf4ff;
+      padding: 40px;
       text-align: center;
-      border-radius: 8px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      color: #004080;
+      margin-bottom: 20px;
     }
     .dual-language {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 20px;
     }
     .box {
-      width: 48%;
+      flex: 1 1 30%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .box h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .box.unifi {
+      border-top: 6px solid orange;
+    }
+    .box.maxis {
+      border-top: 6px solid green;
+    }
+    .box.time {
+      border-top: 6px solid #d63384;
+    }
+    .box p {
+      margin: 5px 0;
+    }
+    .testimonial {
+      margin-top: 60px;
+    }
+    .testimonial .quote {
+      background-color: #ffffff;
+      padding: 20px;
+      border-left: 6px solid #0073e6;
       margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .testimonial .quote p {
+      font-style: italic;
+      margin: 0 0 10px;
+    }
+    .testimonial .quote span {
+      font-weight: bold;
+      color: #004080;
+    }
+    form label {
+      font-weight: 600;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #0073e6;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background-color: #005bb5;
     }
     footer {
       background-color: #004080;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px 10px;
+      margin-top: 40px;
     }
     @media (max-width: 768px) {
+      .dual-language {
+        flex-direction: column;
+      }
       .box {
         width: 100%;
       }
@@ -63,90 +159,103 @@
 <body>
   <header>
     <h1>AllFibreRegisterHere</h1>
-    <p>Pendaftaran Semua Jenis Internet Home Fibre | All Fibre Home Internet Registration</p>
+    <p>Pusat pendaftaran semua jenis pelan internet fibre rumah</p>
   </header>
 
   <nav>
-    <a href="#plans">Pelan / Plans</a>
-    <a href="#register">Daftar / Register</a>
-    <a href="#contact">Hubungi Kami / Contact</a>
+    <a href="#pelan">Pelan Internet</a>
+    <a href="#daftar">Daftar Sekarang</a>
+    <a href="#testimoni">Testimoni</a>
   </nav>
 
   <div class="container">
-    <div class="hero">
+    <section class="hero">
       <h2>Daftar Internet Fibre Rumah Anda Hari Ini!</h2>
-      <p>Semua jenama & kawasan disokong — kami bantu proses dari A hingga Z.</p>
-      <p>Register your home fibre internet today — all providers supported, we assist you from start to finish.</p>
-    </div>
+      <p>Pilihan terbaik untuk kelajuan tinggi, pemasangan cepat dan harga berbaloi.</p>
+    </section>
 
-    <section id="plans">
-      <h3>Pelan & Harga / Plans & Pricing</h3>
+    <section id="pelan">
+      <h3>Pilihan Pelan Internet</h3>
       <div class="dual-language">
-        <div class="box">
+        <div class="box unifi">
           <h4>UniFi 100Mbps</h4>
-          <p>Dari RM89/bulan</p>
+          <p>RM89/month</p>
           <h4>UniFi 300Mbps</h4>
-          <p>RM129/bulan</p>
+          <p>RM129/month</p>
           <h4>UniFi 500Mbps</h4>
-          <p>RM149/bulan</p>
+          <p>RM149/month</p>
           <h4>UniFi 1Gbps</h4>
-          <p>RM249/bulan</p>
+          <p>RM249/month</p>
           <h4>UniFi 2Gbps</h4>
-          <p>RM319/bulan</p>
+          <p>RM319/month</p>
+          <p>Free Registration & Installation, Modem & Router Provide</p>
         </div>
-         <div class="box">
-          <p>Free installation & Registration, Router & Modem provide</p>
-         </div>
-        <div class="box">
+        <div class="box maxis">
           <h4>Maxis Fibre 100Mbps</h4>
-          <p>Dari RM89/bulan</p>
+          <p>RM89/month</p>
           <h4>Maxis Fibre 300Mbps</h4>
-          <p>RM129/bulan</p>
+          <p>RM129/month</p>
           <h4>Maxis Fibre 500Mbps</h4>
-          <p>RM149/bulan</p>
+          <p>RM149/month</p>
           <h4>Maxis Fibre 1Gbps</h4>
-          <p>RM249/bulan</p>
+          <p>RM249/month</p>
           <h4>Maxis Fibre 2Gbps</h4>
-          <p>RM319/bulan</p>
-          <p>24/7 support from maxis fibre team</p>
+          <p>RM319/month</p>
+          <p>24/7 Support From Maxis Fibre Team</p>
           <p>Free Installation & Registration, Router & Modem Provide</p>
         </div>
-        <div class="box">
-          <h4>TIME Fibre 500Mbps</h4>
-          <p>Dari RM139/bulan</p>
-          <p>Pilihan ideal untuk apartment/kondominium</p>
+        <div class="box time">
+          <h4>TIME 200Mbps</h4>
+          <p>Harga: RM99/month</p>
+          <h4>TIME 600Mbps</h4>
+          <p>Harga: RM139/month</p>
+          <h4>TIME 1Gbps</h4>
+          <p>Harga: RM199/month</p>
+          <h4>TIME 2Gbps</h4>
+          <p>Harga: RM379/month</p>
+          <p>Kelajuan Konsisten &amp; Tanpa Had</p>
         </div>
       </div>
     </section>
 
-    <section id="register">
-      <h3>Daftar Sekarang / Register Now</h3>
-      <form action="https://formspree.io/f/mgvkobep" method="POST">
-        <label>Nama / Name:</label><br />
-        <input type="text" name="name" required /><br /><br />
-        <label>No. Telefon / Phone Number:</label><br />
-        <input type="text" name="phone" required /><br /><br />
-        <label>Alamat Pemasangan / Installation Address:</label><br />
-        <textarea name="address" required></textarea><br /><br />
-        <label>Pilihan Pelan / Plan Selection:</label><br />
-        <select name="plan">
-          <option value="Unifi">Unifi</option>
-          <option value="Maxis">Maxis</option>
-          <option value="TIME">TIME</option>
-        </select><br /><br />
-        <button type="submit">Hantar / Submit</button>
-      </form>
+    <section id="testimoni" class="testimonial">
+      <h3>Apa Kata Pelanggan Kami</h3>
+      <div class="quote">
+        <p>"Proses pendaftaran sangat mudah dan pemasangan hanya ambil masa 2 hari!"</p>
+        <span>- Amirul, Shah Alam</span>
+      </div>
+      <div class="quote">
+        <p>"Sangat berpuas hati dengan servis pantas dan harga berbaloi. Recommended!"</p>
+        <span>- Farah, JB</span>
+      </div>
     </section>
 
-    <section id="contact">
-      <h3>Hubungi Kami / Contact Us</h3>
-      <p>Email: info@allfibreregisterhere.com</p>
-      <p>WhatsApp: +6012-345 6789</p>
+    <section id="daftar">
+      <h3>Daftar Sekarang</h3>
+      <form action="https://formspree.io/f/mgvkobep" method="POST">
+        <label for="nama">Nama Penuh</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="alamat">Alamat Pemasangan</label>
+        <input type="text" id="alamat" name="alamat" required />
+
+        <label for="nohp">Nombor Telefon</label>
+        <input type="tel" id="nohp" name="nohp" required />
+
+        <label for="pelan">Pilihan Pelan</label>
+        <select id="pelan" name="pelan" required>
+          <option value="Unifi 100Mbps">Unifi 100Mbps</option>
+          <option value="Maxis 300Mbps">Maxis 300Mbps</option>
+          <option value="TIME 500Mbps">TIME 500Mbps</option>
+        </select>
+
+        <button type="submit">Hantar Pendaftaran</button>
+      </form>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 AllFibreRegisterHere. Semua hak cipta terpelihara.</p>
+    <p>&copy; 2025 AllFibreRegisterHere. Semua Hak Dilindungi.</p>
   </footer>
 </body>
 </html>
